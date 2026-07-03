@@ -68,6 +68,16 @@
     .route h3 { font-family:Georgia,"Noto Serif KR",serif; font-size:30px; line-height:1.05; letter-spacing:-.04em; margin:0; font-weight:500; }
     .route p { color:#cabfac; }
     .route small { color:#e8a0a6; font-weight:850; }
+
+    .watch-grid { display:grid; grid-template-columns:1.1fr .95fr .95fr; gap:18px; }
+    .watch-card { background:var(--paper-2); border:1px solid var(--line); padding:28px; min-height:260px; display:flex; flex-direction:column; justify-content:space-between; }
+    .watch-card.primary { background:var(--charcoal); color:#f8efe2; }
+    .watch-card .watch-kicker { color:var(--red); font-weight:900; letter-spacing:.08em; font-size:12px; text-transform:uppercase; margin:0 0 16px; }
+    .watch-card.primary .watch-kicker { color:#ff9aa2; }
+    .watch-card h3 { font-family:Georgia,"Noto Serif KR",serif; font-size:34px; line-height:1.05; letter-spacing:-.04em; margin:0 0 14px; font-weight:500; }
+    .watch-card p { color:var(--muted); margin:0 0 18px; }
+    .watch-card.primary p { color:#d2c7b7; }
+    .watch-note { margin-top:18px; color:var(--muted); font-size:14px; }
     .tool-panel { position:sticky; top:51px; z-index:15; background:rgba(243,238,227,.92); backdrop-filter:blur(16px); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
     .tool-inner { max-width:1240px; margin:0 auto; padding:14px 22px; display:grid; grid-template-columns:1fr auto; gap:16px; align-items:center; }
     .chips { display:flex; gap:10px; overflow:auto; }
@@ -113,7 +123,7 @@
       .nav::-webkit-scrollbar { display:none; }
       .nav a { flex:0 0 auto; min-height:32px; padding:6px 10px; border:1px solid var(--line); background:rgba(255,249,239,.72); font-size:13px; line-height:1.25; }
       .hero-main,.hero-side { padding:34px 20px; }
-      .feature-grid,.catalog,.lens-grid,.routes,.stats { grid-template-columns:1fr; }
+      .feature-grid,.catalog,.lens-grid,.routes,.watch-grid,.stats { grid-template-columns:1fr; }
       .wrap { padding:54px 18px; }
       h1 { margin-top:36px; }
       .tool-panel { top:0; }
@@ -125,7 +135,7 @@
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand"><span class="ig-logo" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="white" stroke-width="2"/><circle cx="17" cy="7" r="1.4" fill="white"/></svg></span><span>경영컨설턴트 채병권 대표 · @biz.pacemaker</span></div>
-      <nav class="nav"><a href="#why">읽는 법</a><a href="#featured">추천 회차</a><a href="#catalog">전체 목록</a><a href="#reference">표·다운로드</a><a href="#follow">팔로우</a></nav>
+      <nav class="nav"><a href="#watch">시청정보</a><a href="#why">읽는 법</a><a href="#featured">추천 회차</a><a href="#catalog">전체 목록</a><a href="#reference">표·다운로드</a><a href="#follow">팔로우</a></nav>
     </div>
   </header>
 
@@ -146,6 +156,15 @@
   </section>
 
   <main>
+    <section class="wrap" id="watch"><div class="section-head"><div class="section-label">시청 정보</div><div><h2>어디서 보고, 언제 방송하나</h2><p class="lead">큐레이션을 읽은 뒤 바로 회차를 찾아볼 수 있도록 정식 다시보기 경로와 정규 방송 시간 정보를 함께 정리했습니다.</p></div></div>
+      <div class="watch-grid">
+        <article class="watch-card primary"><div><p class="watch-kicker">정규 방송</p><h3>tvN<br>매주 월요일<br>밤 10시 10분</h3><p>본방송은 tvN에서 편성됩니다. 특집·스포츠·명절 편성 등에 따라 시간이 달라질 수 있으니 시청 전 편성표를 확인하는 것이 안전합니다.</p></div><a class="btn red" href="https://tvn.cjenm.com/ko/history/" target="_blank" rel="noopener">tvN 프로그램 정보</a></article>
+        <article class="watch-card"><div><p class="watch-kicker">다시보기 01</p><h3>TVING<br>티빙</h3><p>전체 회차를 회차 번호와 제목으로 찾아보기 가장 좋은 공식 다시보기 경로입니다. 이용권 또는 개별 구매가 필요할 수 있습니다.</p></div><a class="btn red" href="https://www.tving.com/contents/P001392765" target="_blank" rel="noopener">티빙에서 다시보기</a></article>
+        <article class="watch-card"><div><p class="watch-kicker">다시보기 02</p><h3>YouTube<br>디글 : Diggle</h3><p>유튜브 채널 디글에서도 《벌거벗은 세계사》 관련 다시보기·클립 콘텐츠를 찾아볼 수 있습니다. 주제명이나 회차 키워드로 검색하면 빠릅니다.</p></div><a class="btn red" href="https://www.youtube.com/@Diggle/search?query=%EB%B2%8C%EA%B1%B0%EB%B2%97%EC%9D%80%20%EC%84%B8%EA%B3%84%EC%82%AC" target="_blank" rel="noopener">디글에서 찾아보기</a></article>
+      </div>
+      <p class="watch-note">추천 검색어 예시: “벌거벗은 세계사 213회 광고”, “벌거벗은 세계사 콜라”, “벌거벗은 세계사 일본 버블 경제”</p>
+    </section>
+
     <section class="wrap" id="why"><div class="section-head"><div class="section-label">읽는 법</div><div><h2>세계사를 사업자의 언어로 읽기</h2><p class="lead">좋은 콘텐츠는 사건을 나열하지 않습니다. 왜 시장이 열렸고, 어떤 욕망이 상품이 되었고, 어떤 리더십이 조직을 움직였는지를 보여줍니다.</p></div></div>
       <div class="lens-grid">
         <article class="lens"><b>01</b><h3>돈의 흐름</h3><p>대공황, 달러, 버블, 관세, 오일쇼크 회차는 경제가 반복적으로 무너지고 회복되는 패턴을 보여줍니다.</p></article>
