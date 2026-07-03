@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="벌거벗은 세계사 경제·마케팅·경영 회차를 비즈니스 관점으로 정리한 자료. 경영컨설턴트 채병권 대표, 인스타그램 @biz.pacemaker" />
+  <meta property="og:title" content="벌거벗은 세계사 비즈니스 회차 큐레이션" />
+  <meta property="og:description" content="경제·마케팅·경영 관점으로 다시 볼 63개 회차 정리" />
+  <title>벌거벗은 세계사 비즈니스 회차 큐레이션</title>
+  <style>
+    :root {
+      --ink:#101010; --paper:#f3eee3; --paper-2:#fff9ef; --muted:#6d655b; --line:#d7c9b5;
+      --red:#E63946; --red-dark:#b91f2b; --charcoal:#0F1115; --gold:#B98A43; --sand:#e8dcc9;
+      --green:#233b2e; --shadow:0 28px 80px rgba(33,24,15,.16);
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; background:var(--paper); color:var(--ink); line-height:1.72; word-break:keep-all; }
+    a { color:inherit; }
+    .topbar { position:sticky; top:0; z-index:20; backdrop-filter:blur(18px); background:rgba(243,238,227,.86); border-bottom:1px solid var(--line); }
+    .topbar-inner { max-width:1240px; margin:0 auto; padding:13px 22px; display:flex; justify-content:space-between; gap:18px; align-items:center; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:850; letter-spacing:-.02em; }
+    .ig-logo { width:24px; height:24px; display:inline-grid; place-items:center; border-radius:7px; background:radial-gradient(circle at 30% 110%, #fdf497 0 18%, #fd5949 45%, #d6249f 65%, #285AEB 100%); color:#fff; }
+    .nav { display:flex; gap:14px; align-items:center; color:#3b352e; font-size:14px; }
+    .nav a { text-decoration:none; padding:8px 0; }
+    .nav a:hover { color:var(--red); }
+    .hero { min-height:86vh; display:grid; grid-template-columns:1.1fr .9fr; border-bottom:1px solid var(--line); }
+    .hero-main { padding:clamp(42px,6vw,82px); display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg,var(--paper-2),var(--paper)); }
+    .eyebrow { color:var(--red); font-weight:900; letter-spacing:.08em; text-transform:uppercase; font-size:12px; }
+    h1 { font-family:Georgia,"Noto Serif KR",serif; font-size:clamp(52px,8.8vw,118px); line-height:.9; letter-spacing:-.078em; font-weight:500; margin:42px 0 24px; }
+    .hero-lead { font-size:clamp(19px,2.1vw,27px); line-height:1.55; color:#342d23; max-width:760px; }
+    .hero-lead strong { color:var(--red); }
+    .hero-side { background:var(--charcoal); color:#f8efe2; padding:clamp(36px,5vw,70px); position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; }
+    .hero-side::before { content:""; position:absolute; inset:24px; border:1px solid rgba(255,255,255,.12); pointer-events:none; }
+    .hero-side::after { content:"63"; position:absolute; right:-28px; bottom:-72px; font-family:Georgia,serif; font-size:300px; line-height:.8; color:rgba(255,255,255,.035); }
+    .stats { position:relative; z-index:1; display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+    .stat { border-top:1px solid rgba(255,255,255,.22); padding-top:14px; }
+    .stat b { display:block; font-family:Georgia,serif; font-size:clamp(42px,5vw,70px); font-weight:400; line-height:1; }
+    .stat span { color:#c7bcaa; font-size:14px; }
+    .profile-card { position:relative; z-index:1; background:#f8efe2; color:#141414; padding:22px; box-shadow:var(--shadow); }
+    .profile-card .name { font-size:22px; font-weight:900; letter-spacing:-.04em; }
+    .profile-card p { margin:8px 0 0; color:#5d554a; }
+    .profile-actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
+    .btn { border:1px solid var(--charcoal); background:var(--charcoal); color:#fff; min-height:44px; padding:11px 16px; border-radius:0; text-decoration:none; font-weight:850; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; gap:8px; }
+    .btn.secondary { background:transparent; color:var(--charcoal); }
+    .btn.red { border-color:var(--red); background:var(--red); color:#fff; }
+    .wrap { max-width:1240px; margin:0 auto; padding:74px 22px; }
+    .section-head { display:grid; grid-template-columns:250px 1fr; gap:42px; align-items:start; margin-bottom:36px; }
+    .section-label { color:var(--red); font-weight:900; letter-spacing:.08em; text-transform:uppercase; font-size:12px; }
+    h2 { font-family:Georgia,"Noto Serif KR",serif; font-size:clamp(36px,5vw,74px); line-height:.98; letter-spacing:-.055em; font-weight:500; margin:0; }
+    .lead { color:var(--muted); font-size:18px; max-width:820px; margin:16px 0 0; }
+    .lens-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+    .lens { background:var(--paper-2); padding:28px; min-height:240px; }
+    .lens b { color:var(--red); font-size:13px; letter-spacing:.08em; }
+    .lens h3 { font-family:Georgia,"Noto Serif KR",serif; font-size:32px; line-height:1.05; margin:18px 0 14px; font-weight:500; letter-spacing:-.04em; }
+    .lens p { color:var(--muted); margin:0; }
+    .feature-grid { display:grid; grid-template-columns:1.25fr .75fr .75fr; gap:18px; }
+    .feature { background:var(--paper-2); border:1px solid var(--line); padding:26px; min-height:280px; display:flex; flex-direction:column; justify-content:space-between; }
+    .feature:first-child { grid-row:span 2; background:var(--charcoal); color:#f8efe2; min-height:578px; }
+    .feature:first-child h3 { font-size:clamp(42px,5vw,68px); }
+    .feature-no { font-family:Georgia,serif; font-size:48px; color:var(--red); line-height:1; }
+    .feature-type { color:var(--muted); font-size:13px; font-weight:800; margin:0 0 10px; }
+    .feature:first-child .feature-type, .feature:first-child p { color:#c9bdaa; }
+    .feature h3 { font-family:Georgia,"Noto Serif KR",serif; font-size:28px; line-height:1.1; font-weight:500; letter-spacing:-.04em; margin:0 0 14px; }
+    .feature p { color:var(--muted); margin:0; }
+    .routes { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; }
+    .route { background:var(--charcoal); color:#f8efe2; padding:24px; min-height:280px; display:flex; flex-direction:column; justify-content:space-between; }
+    .route h3 { font-family:Georgia,"Noto Serif KR",serif; font-size:30px; line-height:1.05; letter-spacing:-.04em; margin:0; font-weight:500; }
+    .route p { color:#cabfac; }
+    .route small { color:#e8a0a6; font-weight:850; }
+    .tool-panel { position:sticky; top:51px; z-index:15; background:rgba(243,238,227,.92); backdrop-filter:blur(16px); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .tool-inner { max-width:1240px; margin:0 auto; padding:14px 22px; display:grid; grid-template-columns:1fr auto; gap:16px; align-items:center; }
+    .chips { display:flex; gap:10px; overflow:auto; }
+    .chip { border:1px solid var(--line); background:transparent; color:#2d271f; padding:10px 14px; min-height:44px; border-radius:999px; font-weight:850; white-space:nowrap; cursor:pointer; }
+    .chip b { color:var(--red); margin-left:5px; }
+    .chip.active,.chip:hover { background:var(--charcoal); color:#fff; border-color:var(--charcoal); }
+    .search { display:flex; gap:8px; align-items:center; }
+    .search input { width:min(280px,28vw); min-height:44px; padding:0 14px; border:1px solid var(--line); background:var(--paper-2); font:inherit; }
+    .catalog { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .episode-card { background:var(--paper-2); border:1px solid var(--line); padding:24px; min-height:270px; display:flex; flex-direction:column; justify-content:space-between; transition:transform .2s ease,border-color .2s ease; }
+    .episode-card:hover { transform:translateY(-4px); border-color:var(--gold); }
+    .card-meta { display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:12px; font-weight:850; letter-spacing:.05em; border-bottom:1px solid var(--line); padding-bottom:12px; }
+    .episode-card h3 { font-family:Georgia,"Noto Serif KR",serif; font-size:26px; line-height:1.13; letter-spacing:-.04em; font-weight:500; margin:20px 0 18px; }
+    .card-tags { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; }
+    .card-tags span { border:1px solid var(--line); color:#4c4338; padding:5px 8px; font-size:12px; font-weight:800; }
+    .episode-card p { color:var(--muted); margin:0; }
+    .reference-actions { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+    .table-wrap { border-top:2px solid var(--ink); overflow:auto; background:var(--paper-2); }
+    table { width:100%; border-collapse:collapse; min-width:1040px; font-size:14px; }
+    th { text-align:left; color:var(--muted); font-size:12px; letter-spacing:.08em; text-transform:uppercase; padding:16px 10px; border-bottom:1px solid var(--ink); }
+    td { vertical-align:top; padding:15px 10px; border-bottom:1px solid var(--line); }
+    td:first-child { color:var(--red); font-weight:900; }
+    td:nth-child(3) { font-weight:800; }
+    .toast { position:fixed; left:50%; bottom:28px; transform:translateX(-50%) translateY(20px); background:var(--charcoal); color:#fff; padding:12px 16px; opacity:0; pointer-events:none; transition:.25s ease; z-index:50; }
+    .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+    .cta { background:var(--charcoal); color:#f8efe2; padding:90px 22px; }
+    .cta-inner { max-width:1120px; margin:0 auto; display:grid; grid-template-columns:1fr .72fr; gap:48px; align-items:center; }
+    .cta h2 { color:#fff; font-size:clamp(46px,6vw,90px); }
+    .cta p { color:#d2c7b7; font-size:19px; }
+    .cta-box { background:#f8efe2; color:#111; padding:30px; box-shadow:var(--shadow); }
+    .cta-box .handle { display:flex; align-items:center; gap:12px; font-size:28px; font-weight:950; letter-spacing:-.03em; }
+    .footer { padding:28px 22px; background:#0a0b0e; color:#958d80; font-size:13px; }
+    .footer-inner { max-width:1240px; margin:0 auto; display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; }
+    .backtop { position:fixed; right:20px; bottom:20px; width:48px; height:48px; border:1px solid var(--line); background:var(--paper-2); color:var(--ink); cursor:pointer; font-weight:900; z-index:30; }
+    @media(max-width:1080px) { .hero,.section-head,.cta-inner { grid-template-columns:1fr; } .feature-grid,.catalog,.lens-grid { grid-template-columns:1fr 1fr; } .routes { grid-template-columns:1fr 1fr; } .tool-inner { grid-template-columns:1fr; } .search input { width:100%; } }
+    @media(max-width:680px) { .topbar-inner,.nav { align-items:flex-start; flex-direction:column; } .hero-main,.hero-side { padding:34px 20px; } .feature-grid,.catalog,.lens-grid,.routes,.stats { grid-template-columns:1fr; } .wrap { padding:54px 18px; } h1 { margin-top:36px; } .tool-panel { top:0; } }
+    @media print { .topbar,.tool-panel,.reference-actions,.backtop,.cta { display:none; } body { background:white; } .episode-card,.feature,.lens,.route { break-inside:avoid; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="ig-logo" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="white" stroke-width="2"/><circle cx="17" cy="7" r="1.4" fill="white"/></svg></span><span>경영컨설턴트 채병권 대표 · @biz.pacemaker</span></div>
+      <nav class="nav"><a href="#why">읽는 법</a><a href="#featured">추천 회차</a><a href="#catalog">전체 목록</a><a href="#reference">표·다운로드</a><a href="#follow">팔로우</a></nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-main">
+      <div><p class="eyebrow">비즈니스 세계사 큐레이션</p><h1>벌거벗은<br>세계사<br>비즈니스<br>회차 큐레이션</h1><p class="hero-lead">세계사를 단순한 사건이 아니라 <strong>시장, 브랜드, 자본, 도시, 리더십의 흐름</strong>으로 읽기 위한 자료입니다. 경제·마케팅·경영 관점에서 다시 볼 만한 63개 회차를 선별했습니다.</p></div>
+      <div class="profile-actions"><a class="btn red" href="#catalog">회차 살펴보기</a><a class="btn secondary" href="#reference">CSV 다운로드</a></div>
+    </div>
+    <aside class="hero-side">
+      <div class="stats">
+        <div class="stat"><b>63</b><span>비즈니스 관점 선별 회차</span></div>
+        <div class="stat"><b>6</b><span>경제·마케팅·경영·브랜드·도시·자원 렌즈</span></div>
+        <div class="stat"><b>2021—2026</b><span>방영 및 예정 회차 범위</span></div>
+        <div class="stat"><b>12</b><span>우선 추천 회차</span></div>
+      </div>
+      <div class="profile-card"><div class="name">경영컨설턴트 채병권 대표</div><p>소상공인과 1인사업자가 세계사 속 비즈니스 구조를 읽고, 자신의 사업에 적용할 수 있도록 정리한 큐레이션입니다.</p><div class="profile-actions"><a class="btn red" href="https://www.instagram.com/biz.pacemaker/" target="_blank" rel="noopener">인스타그램 팔로우</a><a class="btn secondary" href="https://ig.me/m/biz.pacemaker" target="_blank" rel="noopener">DM 보내기</a></div></div>
+    </aside>
+  </section>
+
+  <main>
+    <section class="wrap" id="why"><div class="section-head"><div class="section-label">읽는 법</div><div><h2>세계사를 사업자의 언어로 읽기</h2><p class="lead">좋은 콘텐츠는 사건을 나열하지 않습니다. 왜 시장이 열렸고, 어떤 욕망이 상품이 되었고, 어떤 리더십이 조직을 움직였는지를 보여줍니다.</p></div></div>
+      <div class="lens-grid">
+        <article class="lens"><b>01</b><h3>돈의 흐름</h3><p>대공황, 달러, 버블, 관세, 오일쇼크 회차는 경제가 반복적으로 무너지고 회복되는 패턴을 보여줍니다.</p></article>
+        <article class="lens"><b>02</b><h3>욕망의 상품화</h3><p>콜라, 커피, 초콜릿, 와인, 라면, 패스트푸드는 취향이 산업으로 바뀌는 과정을 설명합니다.</p></article>
+        <article class="lens"><b>03</b><h3>브랜드의 권위</h3><p>샤넬, LVMH, 미슐랭, 할리우드는 상품 이상의 상징을 만드는 방식에 대한 사례입니다.</p></article>
+        <article class="lens"><b>04</b><h3>도시의 비즈니스 모델</h3><p>맨해튼, 싱가포르, 라스베이거스, 마카오는 장소가 수익 구조로 설계되는 과정을 보여줍니다.</p></article>
+        <article class="lens"><b>05</b><h3>권력과 자원</h3><p>석유, 금, 다이아몬드, 모피, 운하는 자원이 어떻게 패권과 갈등을 만드는지 보여줍니다.</p></article>
+        <article class="lens"><b>06</b><h3>리더십의 비용</h3><p>잡스, 머스크, 대처, 노벨, 루스벨트는 성과와 부작용을 동시에 남긴 리더십 사례입니다.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap" id="featured"><div class="section-head"><div class="section-label">먼저 볼 회차</div><div><h2>먼저 볼 추천 회차</h2><p class="lead">강의, 칼럼, 인스타그램 캐러셀, 컨설팅 사례로 바꾸기 쉬운 회차를 앞에 모았습니다.</p></div></div><div class="feature-grid">
+    <article class="feature feature-1">
+      <div class="feature-no">261</div>
+      <div>
+        <p class="feature-type">경제/투자 · 2026-06-29</p>
+        <h3>주식 부동산 열풍! 천재과학자 뉴턴도 실패한 광기의 투자사</h3>
+        <p>투자 열풍과 버블 붕괴의 반복 패턴</p>
+      </div>
+    </article>
+    <article class="feature feature-2">
+      <div class="feature-no">260</div>
+      <div>
+        <p class="feature-type">경제/자원 · 2026-06-22</p>
+        <h3>미·이란 전쟁이 불러온 공포! 1·2차 오일쇼크의 역사</h3>
+        <p>원자재 가격이 소비·물가·기업비용에 미치는 영향</p>
+      </div>
+    </article>
+    <article class="feature feature-3">
+      <div class="feature-no">222</div>
+      <div>
+        <p class="feature-type">마케팅/산업 · 2025-09-23</p>
+        <h3>1,000조 산업! 패스트푸드는 어떻게 세계를 사로잡았나!</h3>
+        <p>표준화·속도·프랜차이즈·굿즈 마케팅</p>
+      </div>
+    </article>
+    <article class="feature feature-4">
+      <div class="feature-no">213</div>
+      <div>
+        <p class="feature-type">마케팅/광고 · 2025-07-22</p>
+        <h3>설득인가? 속임수인가? 인류의 삶을 뒤흔든 광고</h3>
+        <p>광고가 산업과 소비행동을 바꾼 역사</p>
+      </div>
+    </article>
+    <article class="feature feature-5">
+      <div class="feature-no">186</div>
+      <div>
+        <p class="feature-type">마케팅/브랜드 · 2025-01-14</p>
+        <h3>흑백요리사(史)! 프랑스는 어떻게 미슐랭을 탄생시켰나?</h3>
+        <p>타이어 회사의 콘텐츠 마케팅이 권위가 된 사례</p>
+      </div>
+    </article>
+    <article class="feature feature-6">
+      <div class="feature-no">184</div>
+      <div>
+        <p class="feature-type">경제/도시 · 2024-12-31</p>
+        <h3>뻘밭에서 2천조의 땅으로! 세계 경제의 상징 맨해튼</h3>
+        <p>입지·금융·부동산이 도시가치를 만드는 구조</p>
+      </div>
+    </article>
+    <article class="feature feature-7">
+      <div class="feature-no">155</div>
+      <div>
+        <p class="feature-type">경영/브랜드 · 2024-06-11</p>
+        <h3>세계 부자 1위는 어떻게 명품 제국을 이루었나?</h3>
+        <p>인수합병·포트폴리오·럭셔리 브랜드 전략</p>
+      </div>
+    </article>
+    <article class="feature feature-8">
+      <div class="feature-no">154</div>
+      <div>
+        <p class="feature-type">마케팅/브랜드 · 2024-06-04</p>
+        <h3>미국의 상징 콜라는 어떻게 세계를 중독 시켰나</h3>
+        <p>전쟁·유통·브랜딩으로 세계 음료가 된 과정</p>
+      </div>
+    </article>
+    <article class="feature feature-9">
+      <div class="feature-no">112</div>
+      <div>
+        <p class="feature-type">경영/기업가 · 2023-08-15</p>
+        <h3>비정한 워커홀릭 스티브 잡스는 어떻게 혁신의 아이콘이 되었나?!</h3>
+        <p>제품철학·조직문화·리더십의 양면</p>
+      </div>
+    </article>
+    <article class="feature feature-10">
+      <div class="feature-no">63</div>
+      <div>
+        <p class="feature-type">경제/버블 · 2022-09-06</p>
+        <h3>잃어버린 20년! 일본을 붕괴시킨 버블 경제</h3>
+        <p>자산버블과 장기침체의 교훈</p>
+      </div>
+    </article>
+    <article class="feature feature-11">
+      <div class="feature-no">56</div>
+      <div>
+        <p class="feature-type">경제/통화 · 2022-07-19</p>
+        <h3>달러는 어떻게 세계 경제를 장악했나!</h3>
+        <p>기축통화와 세계경제 지배 구조</p>
+      </div>
+    </article>
+    <article class="feature feature-12">
+      <div class="feature-no">23</div>
+      <div>
+        <p class="feature-type">경제/금융위기 · 2021-08-10</p>
+        <h3>경제 대공황 편</h3>
+        <p>자본주의 호황과 붕괴의 전형</p>
+      </div>
+    </article></div></section>
+
+    <section class="wrap"><div class="section-head"><div class="section-label">목적별 시청 루트</div><div><h2>목적별 시청 루트</h2><p class="lead">시간이 부족하다면 아래 루트별로 먼저 보십시오. 각각 하나의 강의·칼럼 주제로 확장하기 좋습니다.</p></div></div>
+      <div class="routes">
+        <article class="route"><h3>마케팅과 욕망</h3><p>213 광고 → 154 콜라 → 222 패스트푸드 → 186 미슐랭</p><small>소비행동·브랜드·설득</small></article>
+        <article class="route"><h3>금융위기와 투자</h3><p>23 대공황 → 56 달러 → 63 일본 버블 → 261 투자사</p><small>버블·금리·공포</small></article>
+        <article class="route"><h3>브랜드 제국</h3><p>110 샤넬 → 155 LVMH → 112 스티브 잡스 → 192 머스크</p><small>창업자 서사·제품철학</small></article>
+        <article class="route"><h3>도시와 장소 브랜딩</h3><p>184 맨해튼 → 161 싱가포르 → 145 라스베이거스 → 180 마카오</p><small>입지·관광·규제산업</small></article>
+        <article class="route"><h3>자원과 패권</h3><p>58 석유패권 → 260 오일쇼크 → 207 관세전쟁 → 262 운하</p><small>공급망·물류·지정학</small></article>
+      </div>
+    </section>
+
+    <section class="tool-panel" aria-label="검색 및 필터"><div class="tool-inner"><div class="chips"><button class="chip active" data-filter="all">전체 <b>63</b></button><button class="chip" data-filter="경제">경제 <b>30</b></button><button class="chip" data-filter="경영">경영 <b>7</b></button><button class="chip" data-filter="마케팅">마케팅 <b>6</b></button><button class="chip" data-filter="문화산업">문화산업 <b>5</b></button><button class="chip" data-filter="경제범죄">경제범죄 <b>2</b></button><button class="chip" data-filter="경제정책">경제정책 <b>2</b></button><button class="chip" data-filter="관광">관광 <b>2</b></button><button class="chip" data-filter="상품사">상품사 <b>2</b></button><button class="chip" data-filter="브랜드">브랜드 <b>2</b></button><button class="chip" data-filter="식품산업">식품산업 <b>1</b></button><button class="chip" data-filter="관광경제">관광경제 <b>1</b></button><button class="chip" data-filter="부동산">부동산 <b>1</b></button><button class="chip" data-filter="산업">산업 <b>1</b></button><button class="chip" data-filter="불법경제">불법경제 <b>1</b></button></div><div class="search"><input id="searchInput" type="search" placeholder="제목·키워드 검색"/><button class="btn secondary" id="clearSearch">초기화</button></div></div></section>
+
+    <section class="wrap" id="catalog"><div class="section-head"><div class="section-label">전체 회차</div><div><h2>전체 회차 목록</h2><p class="lead">분류 필터와 검색을 함께 사용해 필요한 자료만 좁혀볼 수 있습니다.</p></div></div><div class="catalog" id="catalogGrid">
+    <article class="episode-card" data-major="경제" data-title="지리의 힘! 연간 22조 원의 물길, 운하!" data-keywords="운하·수에즈·파나마·세계 물류" data-category="경제/물류">
+      <div class="card-meta"><span>262회</span><span>2026-07-06 예정</span></div>
+      <h3>지리의 힘! 연간 22조 원의 물길, 운하!</h3>
+      <div class="card-tags"><span>경제/물류</span><span>운하·수에즈·파나마·세계 물류</span></div>
+      <p>물류 병목과 지정학이 시장을 바꾸는 구조</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="주식 부동산 열풍! 천재과학자 뉴턴도 실패한 광기의 투자사" data-keywords="주식·부동산·거품경제" data-category="경제/투자">
+      <div class="card-meta"><span>261회</span><span>2026-06-29</span></div>
+      <h3>주식 부동산 열풍! 천재과학자 뉴턴도 실패한 광기의 투자사</h3>
+      <div class="card-tags"><span>경제/투자</span><span>주식·부동산·거품경제</span></div>
+      <p>투자 열풍과 버블 붕괴의 반복 패턴</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="미·이란 전쟁이 불러온 공포! 1·2차 오일쇼크의 역사" data-keywords="오일쇼크·석유·인플레이션" data-category="경제/자원">
+      <div class="card-meta"><span>260회</span><span>2026-06-22</span></div>
+      <h3>미·이란 전쟁이 불러온 공포! 1·2차 오일쇼크의 역사</h3>
+      <div class="card-tags"><span>경제/자원</span><span>오일쇼크·석유·인플레이션</span></div>
+      <p>원자재 가격이 소비·물가·기업비용에 미치는 영향</p>
+    </article>
+    <article class="episode-card" data-major="경제범죄" data-title="히틀러 유품·에펠탑 철거! 황당 사기 스캔들" data-keywords="사기·은행·투자사기" data-category="경제범죄">
+      <div class="card-meta"><span>254회</span><span>2026-05-11</span></div>
+      <h3>히틀러 유품·에펠탑 철거! 황당 사기 스캔들</h3>
+      <div class="card-tags"><span>경제범죄</span><span>사기·은행·투자사기</span></div>
+      <p>신뢰·권위·유명세를 악용한 사기 구조</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="미국의 대공황은 어떻게 범죄 커플을 만들었나" data-keywords="대공황·은행강도·불황" data-category="경제/사회">
+      <div class="card-meta"><span>250회</span><span>2026-04-13</span></div>
+      <h3>미국의 대공황은 어떻게 범죄 커플을 만들었나</h3>
+      <div class="card-tags"><span>경제/사회</span><span>대공황·은행강도·불황</span></div>
+      <p>불황이 범죄·대중문화·소비심리에 미친 영향</p>
+    </article>
+    <article class="episode-card" data-major="경제범죄" data-title="납치·사기·폭력이 판치는 캄보디아 범죄단지" data-keywords="보이스피싱·투자리딩방·로맨스스캠" data-category="경제범죄/운영">
+      <div class="card-meta"><span>246회</span><span>2026-03-16</span></div>
+      <h3>납치·사기·폭력이 판치는 캄보디아 범죄단지</h3>
+      <div class="card-tags"><span>경제범죄/운영</span><span>보이스피싱·투자리딩방·로맨스스캠</span></div>
+      <p>범죄조직도 운영시스템과 퍼널을 가진다는 경고</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="잉카, 나치, 5천억 도난까지! 황금약탈사" data-keywords="금·안전자산·약탈" data-category="경제/자산">
+      <div class="card-meta"><span>236회</span><span>2026-01-05</span></div>
+      <h3>잉카, 나치, 5천억 도난까지! 황금약탈사</h3>
+      <div class="card-tags"><span>경제/자산</span><span>금·안전자산·약탈</span></div>
+      <p>화폐 불안 시 안전자산이 권력·폭력과 연결되는 방식</p>
+    </article>
+    <article class="episode-card" data-major="경제정책" data-title="4선대통령 루스벨트는 영웅인가 독재자인가?" data-keywords="루스벨트·대공황·권력집중" data-category="경제정책/리더십">
+      <div class="card-meta"><span>223회</span><span>2025-10-06</span></div>
+      <h3>4선대통령 루스벨트는 영웅인가 독재자인가?</h3>
+      <div class="card-tags"><span>경제정책/리더십</span><span>루스벨트·대공황·권력집중</span></div>
+      <p>위기 대응 리더십과 정부개입의 양면</p>
+    </article>
+    <article class="episode-card" data-major="마케팅" data-title="1,000조 산업! 패스트푸드는 어떻게 세계를 사로잡았나!" data-keywords="패스트푸드·1,000조 산업·현지화" data-category="마케팅/산업">
+      <div class="card-meta"><span>222회</span><span>2025-09-23</span></div>
+      <h3>1,000조 산업! 패스트푸드는 어떻게 세계를 사로잡았나!</h3>
+      <div class="card-tags"><span>마케팅/산업</span><span>패스트푸드·1,000조 산업·현지화</span></div>
+      <p>표준화·속도·프랜차이즈·굿즈 마케팅</p>
+    </article>
+    <article class="episode-card" data-major="문화산업" data-title="환락가에서 꿈의 무대로! 브로드웨이 생존기" data-keywords="브로드웨이·공연산업·도시재생" data-category="문화산업">
+      <div class="card-meta"><span>221회</span><span>2025-09-16</span></div>
+      <h3>환락가에서 꿈의 무대로! 브로드웨이 생존기</h3>
+      <div class="card-tags"><span>문화산업</span><span>브로드웨이·공연산업·도시재생</span></div>
+      <p>범죄지구가 콘텐츠 상권으로 바뀐 과정</p>
+    </article>
+    <article class="episode-card" data-major="마케팅" data-title="가짜뉴스의 시초, 옐로 저널리즘은 어떻게 대중을 현혹했나!" data-keywords="옐로 저널리즘·조회수·가짜뉴스" data-category="마케팅/미디어">
+      <div class="card-meta"><span>217회</span><span>2025-08-19</span></div>
+      <h3>가짜뉴스의 시초, 옐로 저널리즘은 어떻게 대중을 현혹했나!</h3>
+      <div class="card-tags"><span>마케팅/미디어</span><span>옐로 저널리즘·조회수·가짜뉴스</span></div>
+      <p>주의경제와 자극적 콘텐츠의 수익 모델</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="성형수술은 인간의 얼굴과 몸을 어떻게 개조했나?" data-keywords="성형수술·77조 시장" data-category="경제/시장">
+      <div class="card-meta"><span>216회</span><span>2025-08-12</span></div>
+      <h3>성형수술은 인간의 얼굴과 몸을 어떻게 개조했나?</h3>
+      <div class="card-tags"><span>경제/시장</span><span>성형수술·77조 시장</span></div>
+      <p>욕망·기술·의료서비스가 시장을 만드는 방식</p>
+    </article>
+    <article class="episode-card" data-major="경영" data-title="조조부터 트럼프까지! 리더들은 왜 손자병법에 열광하나?" data-keywords="손자병법·리더·전략" data-category="경영/전략">
+      <div class="card-meta"><span>215회</span><span>2025-08-05</span></div>
+      <h3>조조부터 트럼프까지! 리더들은 왜 손자병법에 열광하나?</h3>
+      <div class="card-tags"><span>경영/전략</span><span>손자병법·리더·전략</span></div>
+      <p>군사전략이 경영·외교·협상으로 확장되는 방식</p>
+    </article>
+    <article class="episode-card" data-major="마케팅" data-title="설득인가? 속임수인가? 인류의 삶을 뒤흔든 광고" data-keywords="광고·설득·1,500조 투자비" data-category="마케팅/광고">
+      <div class="card-meta"><span>213회</span><span>2025-07-22</span></div>
+      <h3>설득인가? 속임수인가? 인류의 삶을 뒤흔든 광고</h3>
+      <div class="card-tags"><span>마케팅/광고</span><span>광고·설득·1,500조 투자비</span></div>
+      <p>광고가 산업과 소비행동을 바꾼 역사</p>
+    </article>
+    <article class="episode-card" data-major="식품산업" data-title="밀가루는 어떻게 K-라면이 되었나?" data-keywords="밀가루·K-라면·글로벌 푸드" data-category="식품산업/브랜드">
+      <div class="card-meta"><span>211회</span><span>2025-07-08</span></div>
+      <h3>밀가루는 어떻게 K-라면이 되었나?</h3>
+      <div class="card-tags"><span>식품산업/브랜드</span><span>밀가루·K-라면·글로벌 푸드</span></div>
+      <p>원재료가 대중식품과 수출상품이 되는 과정</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="죄수들의 지옥! 호주는 어떻게 부의 천국이 되었나?" data-keywords="호주·자산·자원·식민지" data-category="경제/국가성장">
+      <div class="card-meta"><span>210회</span><span>2025-07-01</span></div>
+      <h3>죄수들의 지옥! 호주는 어떻게 부의 천국이 되었나?</h3>
+      <div class="card-tags"><span>경제/국가성장</span><span>호주·자산·자원·식민지</span></div>
+      <p>유배지가 부의 천국으로 바뀐 성장 경로</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="트럼프의 관세전쟁! 관세는 어떻게 세계사를 뒤바꿨나!" data-keywords="관세전쟁·세계무역·중국" data-category="경제/무역">
+      <div class="card-meta"><span>207회</span><span>2025-06-10</span></div>
+      <h3>트럼프의 관세전쟁! 관세는 어떻게 세계사를 뒤바꿨나!</h3>
+      <div class="card-tags"><span>경제/무역</span><span>관세전쟁·세계무역·중국</span></div>
+      <p>관세가 공급망·가격·국제질서를 흔드는 방식</p>
+    </article>
+    <article class="episode-card" data-major="관광경제" data-title="비극의 섬 하와이는 어떻게 세계 최고 휴양지가 되었나?" data-keywords="하와이·관광지·식민지" data-category="관광경제">
+      <div class="card-meta"><span>203회</span><span>2025-05-13</span></div>
+      <h3>비극의 섬 하와이는 어떻게 세계 최고 휴양지가 되었나?</h3>
+      <div class="card-tags"><span>관광경제</span><span>하와이·관광지·식민지</span></div>
+      <p>관광 브랜드 뒤의 토지·권력·상업화</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="멕시코는 왜 금싸라기 땅, 텍사스와 캘리포니아를 미국에 빼앗겼나!" data-keywords="텍사스·캘리포니아·석유·IT" data-category="경제/자원">
+      <div class="card-meta"><span>197회</span><span>2025-04-01</span></div>
+      <h3>멕시코는 왜 금싸라기 땅, 텍사스와 캘리포니아를 미국에 빼앗겼나!</h3>
+      <div class="card-tags"><span>경제/자원</span><span>텍사스·캘리포니아·석유·IT</span></div>
+      <p>지역 자원과 산업이 국가경제를 키운 사례</p>
+    </article>
+    <article class="episode-card" data-major="경영" data-title="푸틴의 전쟁대행 주식회사! 바그너 그룹" data-keywords="바그너 그룹·민간군사기업" data-category="경영/조직">
+      <div class="card-meta"><span>196회</span><span>2025-03-25</span></div>
+      <h3>푸틴의 전쟁대행 주식회사! 바그너 그룹</h3>
+      <div class="card-tags"><span>경영/조직</span><span>바그너 그룹·민간군사기업</span></div>
+      <p>전쟁도 외주화·회사화되는 조직 모델</p>
+    </article>
+    <article class="episode-card" data-major="경영" data-title="트럼프의 적에서 킹 메이커가 된 세계 최고 부자, 일론 머스크!" data-keywords="일론 머스크·부자·정치후원" data-category="경영/기업가">
+      <div class="card-meta"><span>192회</span><span>2025-02-25</span></div>
+      <h3>트럼프의 적에서 킹 메이커가 된 세계 최고 부자, 일론 머스크!</h3>
+      <div class="card-tags"><span>경영/기업가</span><span>일론 머스크·부자·정치후원</span></div>
+      <p>기업가 브랜드, 자본, 정치 영향력</p>
+    </article>
+    <article class="episode-card" data-major="부동산" data-title="로제 열풍! 세계 최초의 아파트는 어떻게 탄생했나!" data-keywords="아파트·현대건축·주거상품" data-category="부동산/도시">
+      <div class="card-meta"><span>187회</span><span>2025-01-21</span></div>
+      <h3>로제 열풍! 세계 최초의 아파트는 어떻게 탄생했나!</h3>
+      <div class="card-tags"><span>부동산/도시</span><span>아파트·현대건축·주거상품</span></div>
+      <p>주거 형태가 상품·문화가 되는 과정</p>
+    </article>
+    <article class="episode-card" data-major="마케팅" data-title="흑백요리사(史)! 프랑스는 어떻게 미슐랭을 탄생시켰나?" data-keywords="미슐랭 가이드·미식문화" data-category="마케팅/브랜드">
+      <div class="card-meta"><span>186회</span><span>2025-01-14</span></div>
+      <h3>흑백요리사(史)! 프랑스는 어떻게 미슐랭을 탄생시켰나?</h3>
+      <div class="card-tags"><span>마케팅/브랜드</span><span>미슐랭 가이드·미식문화</span></div>
+      <p>타이어 회사의 콘텐츠 마케팅이 권위가 된 사례</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="뻘밭에서 2천조의 땅으로! 세계 경제의 상징 맨해튼" data-keywords="맨해튼·2천조·세계경제" data-category="경제/도시">
+      <div class="card-meta"><span>184회</span><span>2024-12-31</span></div>
+      <h3>뻘밭에서 2천조의 땅으로! 세계 경제의 상징 맨해튼</h3>
+      <div class="card-tags"><span>경제/도시</span><span>맨해튼·2천조·세계경제</span></div>
+      <p>입지·금융·부동산이 도시가치를 만드는 구조</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="도쿄수난사! 재난은 어떻게 도쿄를 세계도시로 만들었나!" data-keywords="도쿄·재난·세계도시" data-category="경제/도시경영">
+      <div class="card-meta"><span>182회</span><span>2024-12-17</span></div>
+      <h3>도쿄수난사! 재난은 어떻게 도쿄를 세계도시로 만들었나!</h3>
+      <div class="card-tags"><span>경제/도시경영</span><span>도쿄·재난·세계도시</span></div>
+      <p>재난 복구가 도시 경쟁력으로 전환되는 방식</p>
+    </article>
+    <article class="episode-card" data-major="관광" data-title="세계 최대 카지노 도시! 마카오의 탄생" data-keywords="마카오·카지노·관광" data-category="관광/카지노경제">
+      <div class="card-meta"><span>180회</span><span>2024-12-03</span></div>
+      <h3>세계 최대 카지노 도시! 마카오의 탄생</h3>
+      <div class="card-tags"><span>관광/카지노경제</span><span>마카오·카지노·관광</span></div>
+      <p>규제산업과 관광산업의 결합</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="자유의 나라 네덜란드는 왜 학살을 저질렀나?" data-keywords="네덜란드·대항해·식민지" data-category="경제/무역">
+      <div class="card-meta"><span>174회</span><span>2024-10-22</span></div>
+      <h3>자유의 나라 네덜란드는 왜 학살을 저질렀나?</h3>
+      <div class="card-tags"><span>경제/무역</span><span>네덜란드·대항해·식민지</span></div>
+      <p>작은 나라가 무역·금융으로 패권을 만든 방식</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="바다를 닫아 유럽에게 무너진 세계 패권국가 중국" data-keywords="중국·해금정책·해상무역" data-category="경제/무역전략">
+      <div class="card-meta"><span>173회</span><span>2024-10-15</span></div>
+      <h3>바다를 닫아 유럽에게 무너진 세계 패권국가 중국</h3>
+      <div class="card-tags"><span>경제/무역전략</span><span>중국·해금정책·해상무역</span></div>
+      <p>바다를 닫은 전략이 시장을 잃게 한 사례</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="모피를 향한 탐욕이 만든 죽음의 땅, 시베리아" data-keywords="시베리아·모피·검은 황금" data-category="경제/자원">
+      <div class="card-meta"><span>172회</span><span>2024-10-08</span></div>
+      <h3>모피를 향한 탐욕이 만든 죽음의 땅, 시베리아</h3>
+      <div class="card-tags"><span>경제/자원</span><span>시베리아·모피·검은 황금</span></div>
+      <p>자원 수요가 영토 확장과 폭력을 부른 구조</p>
+    </article>
+    <article class="episode-card" data-major="산업" data-title="신의 선물인가? 저주인가? 플라스틱의 역습" data-keywords="플라스틱·발명·환경비용" data-category="산업/제품수명">
+      <div class="card-meta"><span>170회</span><span>2024-09-24</span></div>
+      <h3>신의 선물인가? 저주인가? 플라스틱의 역습</h3>
+      <div class="card-tags"><span>산업/제품수명</span><span>플라스틱·발명·환경비용</span></div>
+      <p>혁신 제품의 확산과 외부비용</p>
+    </article>
+    <article class="episode-card" data-major="경영" data-title="죽음의 상인 노벨은 왜 노벨상을 만들었나!" data-keywords="노벨·다이너마이트·노벨상" data-category="경영/혁신">
+      <div class="card-meta"><span>162회</span><span>2024-07-30</span></div>
+      <h3>죽음의 상인 노벨은 왜 노벨상을 만들었나!</h3>
+      <div class="card-tags"><span>경영/혁신</span><span>노벨·다이너마이트·노벨상</span></div>
+      <p>발명·평판 리스크·유산 설계</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="죽음의 섬 싱가포르는 어떻게 세계 부국이 되었나?" data-keywords="싱가포르·부국·도시국가" data-category="경제/국가경영">
+      <div class="card-meta"><span>161회</span><span>2024-07-23</span></div>
+      <h3>죽음의 섬 싱가포르는 어떻게 세계 부국이 되었나?</h3>
+      <div class="card-tags"><span>경제/국가경영</span><span>싱가포르·부국·도시국가</span></div>
+      <p>작은 시장이 고부가 경제로 성장한 사례</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="붕괴된 소련을 집어삼킨 거대 재벌, 올리가르히" data-keywords="올리가르히·민영화·부의 집중" data-category="경제/재벌">
+      <div class="card-meta"><span>160회</span><span>2024-07-16</span></div>
+      <h3>붕괴된 소련을 집어삼킨 거대 재벌, 올리가르히</h3>
+      <div class="card-tags"><span>경제/재벌</span><span>올리가르히·민영화·부의 집중</span></div>
+      <p>제도 전환기 자산 사유화와 권력 결합</p>
+    </article>
+    <article class="episode-card" data-major="마케팅" data-title="괴벨스는 어떻게 히틀러를 신으로 만들었나?" data-keywords="괴벨스·선동·브랜딩" data-category="마케팅/프로파간다">
+      <div class="card-meta"><span>157회</span><span>2024-06-25</span></div>
+      <h3>괴벨스는 어떻게 히틀러를 신으로 만들었나?</h3>
+      <div class="card-tags"><span>마케팅/프로파간다</span><span>괴벨스·선동·브랜딩</span></div>
+      <p>메시지 반복과 이미지 설계의 위험한 힘</p>
+    </article>
+    <article class="episode-card" data-major="경영" data-title="세계 부자 1위는 어떻게 명품 제국을 이루었나?" data-keywords="LVMH·명품제국·아르노" data-category="경영/브랜드">
+      <div class="card-meta"><span>155회</span><span>2024-06-11</span></div>
+      <h3>세계 부자 1위는 어떻게 명품 제국을 이루었나?</h3>
+      <div class="card-tags"><span>경영/브랜드</span><span>LVMH·명품제국·아르노</span></div>
+      <p>인수합병·포트폴리오·럭셔리 브랜드 전략</p>
+    </article>
+    <article class="episode-card" data-major="마케팅" data-title="미국의 상징 콜라는 어떻게 세계를 중독 시켰나" data-keywords="콜라·코카콜라·세계화" data-category="마케팅/브랜드">
+      <div class="card-meta"><span>154회</span><span>2024-06-04</span></div>
+      <h3>미국의 상징 콜라는 어떻게 세계를 중독 시켰나</h3>
+      <div class="card-tags"><span>마케팅/브랜드</span><span>콜라·코카콜라·세계화</span></div>
+      <p>전쟁·유통·브랜딩으로 세계 음료가 된 과정</p>
+    </article>
+    <article class="episode-card" data-major="문화산업" data-title="할리우드에 저항한 최초의 여배우! 마릴린 먼로" data-keywords="마릴린 먼로·할리우드 시스템" data-category="문화산업/개인브랜드">
+      <div class="card-meta"><span>152회</span><span>2024-05-21</span></div>
+      <h3>할리우드에 저항한 최초의 여배우! 마릴린 먼로</h3>
+      <div class="card-tags"><span>문화산업/개인브랜드</span><span>마릴린 먼로·할리우드 시스템</span></div>
+      <p>스타 IP와 개인 브랜드의 권리 투쟁</p>
+    </article>
+    <article class="episode-card" data-major="관광" data-title="금욕의 땅, 라스베이거스는 어떻게 환락의 도시가 되었나?" data-keywords="라스베이거스·카지노·환락도시" data-category="관광/도시마케팅">
+      <div class="card-meta"><span>145회</span><span>2024-04-02</span></div>
+      <h3>금욕의 땅, 라스베이거스는 어떻게 환락의 도시가 되었나?</h3>
+      <div class="card-tags"><span>관광/도시마케팅</span><span>라스베이거스·카지노·환락도시</span></div>
+      <p>장소 브랜딩과 규제산업의 도시 성장</p>
+    </article>
+    <article class="episode-card" data-major="문화산업" data-title="리틀 할리우드! 홍콩 영화는 어떻게 망했나?" data-keywords="홍콩영화·리틀 할리우드" data-category="문화산업">
+      <div class="card-meta"><span>143회</span><span>2024-03-19</span></div>
+      <h3>리틀 할리우드! 홍콩 영화는 어떻게 망했나?</h3>
+      <div class="card-tags"><span>문화산업</span><span>홍콩영화·리틀 할리우드</span></div>
+      <p>콘텐츠 산업이 성장·쇠퇴하는 조건</p>
+    </article>
+    <article class="episode-card" data-major="상품사" data-title="달콤함이 불러온 재앙! 인간의 욕망이 깃든 초콜릿" data-keywords="초콜릿·사치품·원료" data-category="상품사/소비">
+      <div class="card-meta"><span>142회</span><span>2024-03-12</span></div>
+      <h3>달콤함이 불러온 재앙! 인간의 욕망이 깃든 초콜릿</h3>
+      <div class="card-tags"><span>상품사/소비</span><span>초콜릿·사치품·원료</span></div>
+      <p>기호품이 글로벌 소비재가 되는 과정</p>
+    </article>
+    <article class="episode-card" data-major="경제정책" data-title="영국병을 타파한 ‘철의 여인’ 마거릿 대처의 두 얼굴!" data-keywords="마거릿 대처·영국병·민영화" data-category="경제정책/리더십">
+      <div class="card-meta"><span>138회</span><span>2024-02-13</span></div>
+      <h3>영국병을 타파한 ‘철의 여인’ 마거릿 대처의 두 얼굴!</h3>
+      <div class="card-tags"><span>경제정책/리더십</span><span>마거릿 대처·영국병·민영화</span></div>
+      <p>구조개혁 리더십과 사회적 비용</p>
+    </article>
+    <article class="episode-card" data-major="브랜드" data-title="신의 물방울, 와인은 어떻게 프랑스의 자존심이 되었나?" data-keywords="와인·프랑스·자존심" data-category="브랜드/식문화">
+      <div class="card-meta"><span>121회</span><span>2023-10-17</span></div>
+      <h3>신의 물방울, 와인은 어떻게 프랑스의 자존심이 되었나?</h3>
+      <div class="card-tags"><span>브랜드/식문화</span><span>와인·프랑스·자존심</span></div>
+      <p>지역 산물이 국가 브랜드가 되는 방식</p>
+    </article>
+    <article class="episode-card" data-major="문화산업" data-title="화려한 할리우드 성장에 감춰진 추악한 진실" data-keywords="할리우드·영화도시·시스템" data-category="문화산업">
+      <div class="card-meta"><span>113회</span><span>2023-08-22</span></div>
+      <h3>화려한 할리우드 성장에 감춰진 추악한 진실</h3>
+      <div class="card-tags"><span>문화산업</span><span>할리우드·영화도시·시스템</span></div>
+      <p>엔터테인먼트 산업 성장의 어두운 이면</p>
+    </article>
+    <article class="episode-card" data-major="경영" data-title="비정한 워커홀릭 스티브 잡스는 어떻게 혁신의 아이콘이 되었나?!" data-keywords="스티브 잡스·애플·혁신" data-category="경영/기업가">
+      <div class="card-meta"><span>112회</span><span>2023-08-15</span></div>
+      <h3>비정한 워커홀릭 스티브 잡스는 어떻게 혁신의 아이콘이 되었나?!</h3>
+      <div class="card-tags"><span>경영/기업가</span><span>스티브 잡스·애플·혁신</span></div>
+      <p>제품철학·조직문화·리더십의 양면</p>
+    </article>
+    <article class="episode-card" data-major="브랜드" data-title="파란만장한 삶 위에 세운 샤넬 제국" data-keywords="샤넬·패션제국" data-category="브랜드/패션경영">
+      <div class="card-meta"><span>110회</span><span>2023-08-01</span></div>
+      <h3>파란만장한 삶 위에 세운 샤넬 제국</h3>
+      <div class="card-tags"><span>브랜드/패션경영</span><span>샤넬·패션제국</span></div>
+      <p>창업자 서사와 브랜드 자산 구축</p>
+    </article>
+    <article class="episode-card" data-major="문화산업" data-title="미국은 왜 블랙 코미디의 거장, 찰리 채플린을 버렸나" data-keywords="찰리 채플린·연봉·할리우드" data-category="문화산업/노동">
+      <div class="card-meta"><span>98회</span><span>2023-05-09</span></div>
+      <h3>미국은 왜 블랙 코미디의 거장, 찰리 채플린을 버렸나</h3>
+      <div class="card-tags"><span>문화산업/노동</span><span>찰리 채플린·연봉·할리우드</span></div>
+      <p>콘텐츠 스타의 수익과 정치 리스크</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="오일머니로 일군 세계 1위 부자 빈 살만의 쩐의 전쟁" data-keywords="빈 살만·오일머니·사우디" data-category="경제/자원전략">
+      <div class="card-meta"><span>93회</span><span>2023-04-04</span></div>
+      <h3>오일머니로 일군 세계 1위 부자 빈 살만의 쩐의 전쟁</h3>
+      <div class="card-tags"><span>경제/자원전략</span><span>빈 살만·오일머니·사우디</span></div>
+      <p>자원 의존국의 개혁·투자 전략</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="기회인가? 재앙인가? 21세기 우주 패권 전쟁" data-keywords="우주패권·NASA·우주산업" data-category="경제/신산업">
+      <div class="card-meta"><span>84회</span><span>2023-01-31</span></div>
+      <h3>기회인가? 재앙인가? 21세기 우주 패권 전쟁</h3>
+      <div class="card-tags"><span>경제/신산업</span><span>우주패권·NASA·우주산업</span></div>
+      <p>국가 경쟁이 신산업 생태계로 이어지는 방식</p>
+    </article>
+    <article class="episode-card" data-major="경영" data-title="위인전에서 알려주지 않는 발명왕 에디슨의 실체" data-keywords="에디슨·발명·사업화" data-category="경영/혁신">
+      <div class="card-meta"><span>82회</span><span>2023-01-17</span></div>
+      <h3>위인전에서 알려주지 않는 발명왕 에디슨의 실체</h3>
+      <div class="card-tags"><span>경영/혁신</span><span>에디슨·발명·사업화</span></div>
+      <p>발명가에서 사업가로 확장한 혁신 모델</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="뻘밭에서 황금의 땅으로! 상하이 격동의 150년" data-keywords="상하이·경제도시·조계지" data-category="경제/도시">
+      <div class="card-meta"><span>81회</span><span>2023-01-10</span></div>
+      <h3>뻘밭에서 황금의 땅으로! 상하이 격동의 150년</h3>
+      <div class="card-tags"><span>경제/도시</span><span>상하이·경제도시·조계지</span></div>
+      <p>항구·외국자본·전쟁이 도시경제를 바꾼 사례</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="권모술수로 일군 금융 커넥션! 메디치 가문" data-keywords="메디치·금융재벌·후원" data-category="경제/금융경영">
+      <div class="card-meta"><span>70회</span><span>2022-10-25</span></div>
+      <h3>권모술수로 일군 금융 커넥션! 메디치 가문</h3>
+      <div class="card-tags"><span>경제/금융경영</span><span>메디치·금융재벌·후원</span></div>
+      <p>금융자본과 문화후원의 결합</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="잃어버린 20년! 일본을 붕괴시킨 버블 경제" data-keywords="일본 버블경제·잃어버린 20년" data-category="경제/버블">
+      <div class="card-meta"><span>63회</span><span>2022-09-06</span></div>
+      <h3>잃어버린 20년! 일본을 붕괴시킨 버블 경제</h3>
+      <div class="card-tags"><span>경제/버블</span><span>일본 버블경제·잃어버린 20년</span></div>
+      <p>자산버블과 장기침체의 교훈</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="탐욕이 불러온 대살육, 블러드 다이아몬드" data-keywords="블러드 다이아몬드·사치재" data-category="경제/자원윤리">
+      <div class="card-meta"><span>62회</span><span>2022-08-30</span></div>
+      <h3>탐욕이 불러온 대살육, 블러드 다이아몬드</h3>
+      <div class="card-tags"><span>경제/자원윤리</span><span>블러드 다이아몬드·사치재</span></div>
+      <p>원자재 공급망과 윤리적 소비</p>
+    </article>
+    <article class="episode-card" data-major="상품사" data-title="유럽을 잠 못 이루게 한 오스만 제국과 커피" data-keywords="커피·오스만·세계화" data-category="상품사/브랜드">
+      <div class="card-meta"><span>60회</span><span>2022-08-16</span></div>
+      <h3>유럽을 잠 못 이루게 한 오스만 제국과 커피</h3>
+      <div class="card-tags"><span>상품사/브랜드</span><span>커피·오스만·세계화</span></div>
+      <p>기호품이 글로벌 습관과 시장이 된 과정</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="오일 쇼크의 악몽?! 석유 패권 전쟁" data-keywords="석유패권·유가·물가" data-category="경제/자원">
+      <div class="card-meta"><span>58회</span><span>2022-08-02</span></div>
+      <h3>오일 쇼크의 악몽?! 석유 패권 전쟁</h3>
+      <div class="card-tags"><span>경제/자원</span><span>석유패권·유가·물가</span></div>
+      <p>에너지 패권이 세계경제를 움직이는 방식</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="달러는 어떻게 세계 경제를 장악했나!" data-keywords="달러·인플레이션·금리" data-category="경제/통화">
+      <div class="card-meta"><span>56회</span><span>2022-07-19</span></div>
+      <h3>달러는 어떻게 세계 경제를 장악했나!</h3>
+      <div class="card-tags"><span>경제/통화</span><span>달러·인플레이션·금리</span></div>
+      <p>기축통화와 세계경제 지배 구조</p>
+    </article>
+    <article class="episode-card" data-major="불법경제" data-title="라틴 아메리카는 왜 마약 조직의 온상이 되었나?" data-keywords="마약조직·유통·카르텔" data-category="불법경제">
+      <div class="card-meta"><span>49회</span><span>2022-05-31</span></div>
+      <h3>라틴 아메리카는 왜 마약 조직의 온상이 되었나?</h3>
+      <div class="card-tags"><span>불법경제</span><span>마약조직·유통·카르텔</span></div>
+      <p>불법 시장의 유통망과 조직화</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="세상을 바꾼 산업혁명과 슬럼가의 비극" data-keywords="산업혁명·대량생산·공장" data-category="경제/산업혁명">
+      <div class="card-meta"><span>47회</span><span>2022-05-17</span></div>
+      <h3>세상을 바꾼 산업혁명과 슬럼가의 비극</h3>
+      <div class="card-tags"><span>경제/산업혁명</span><span>산업혁명·대량생산·공장</span></div>
+      <p>생산방식 변화와 도시 빈곤</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="미국의 서부 팽창과 인디언의 눈물" data-keywords="미국 서부팽창·토지거래" data-category="경제/부동산">
+      <div class="card-meta"><span>43회</span><span>2022-04-19</span></div>
+      <h3>미국의 서부 팽창과 인디언의 눈물</h3>
+      <div class="card-tags"><span>경제/부동산</span><span>미국 서부팽창·토지거래</span></div>
+      <p>토지 확보와 국가 성장의 관계</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="달콤함이 만든 잔혹한 거래, 영국 노예무역" data-keywords="노예무역·설탕·상품화" data-category="경제/무역윤리">
+      <div class="card-meta"><span>41회</span><span>2022-04-05</span></div>
+      <h3>달콤함이 만든 잔혹한 거래, 영국 노예무역</h3>
+      <div class="card-tags"><span>경제/무역윤리</span><span>노예무역·설탕·상품화</span></div>
+      <p>소비재 이면의 공급망 폭력</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="영 제국이 일으킨 가장 부도덕한 전쟁! &lt;아편전쟁&gt;" data-keywords="아편전쟁·홍차·무역적자" data-category="경제/무역">
+      <div class="card-meta"><span>30회</span><span>2022-01-11</span></div>
+      <h3>영 제국이 일으킨 가장 부도덕한 전쟁! &lt;아편전쟁&gt;</h3>
+      <div class="card-tags"><span>경제/무역</span><span>아편전쟁·홍차·무역적자</span></div>
+      <p>무역 불균형이 전쟁으로 번진 사례</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="걸프전쟁 편" data-keywords="걸프전쟁·석유·패권" data-category="경제/자원전쟁">
+      <div class="card-meta"><span>24회</span><span>2021-08-17</span></div>
+      <h3>걸프전쟁 편</h3>
+      <div class="card-tags"><span>경제/자원전쟁</span><span>걸프전쟁·석유·패권</span></div>
+      <p>자원 확보가 국제전쟁으로 확장된 사례</p>
+    </article>
+    <article class="episode-card" data-major="경제" data-title="경제 대공황 편" data-keywords="경제 대공황·주식시장·은행" data-category="경제/금융위기">
+      <div class="card-meta"><span>23회</span><span>2021-08-10</span></div>
+      <h3>경제 대공황 편</h3>
+      <div class="card-tags"><span>경제/금융위기</span><span>경제 대공황·주식시장·은행</span></div>
+      <p>자본주의 호황과 붕괴의 전형</p>
+    </article></div></section>
+
+    <section class="wrap" id="reference"><div class="section-head"><div class="section-label">다운로드와 복사</div><div><h2>표로 가져가기</h2><p class="lead">강의안, 노션, 구글시트, 제안서에 붙여넣기 쉽도록 엑셀에서 한글이 깨지지 않는 CSV 다운로드, 엑셀 파일, 표 복사 기능을 넣었습니다.</p></div></div>
+      <div class="reference-actions"><button class="btn red" id="downloadCsv">Excel용 CSV 다운로드</button><a class="btn secondary" href="episodes.xlsx" download>엑셀 파일(.xlsx)</a><button class="btn secondary" id="copyCsv">CSV 복사</button><button class="btn secondary" id="copyTable">표 복사</button><button class="btn secondary" id="copyLink">현재 링크 복사</button></div>
+      <div class="table-wrap"><table id="episodeTable"><thead><tr><th>회차</th><th>방영일자</th><th>제목</th><th>분류</th><th>핵심 키워드</th><th>비즈니스 관점</th></tr></thead><tbody><tr data-major="경제"><td>262</td><td>2026-07-06 예정</td><td>지리의 힘! 연간 22조 원의 물길, 운하!</td><td>경제/물류</td><td>운하·수에즈·파나마·세계 물류</td><td>물류 병목과 지정학이 시장을 바꾸는 구조</td></tr><tr data-major="경제"><td>261</td><td>2026-06-29</td><td>주식 부동산 열풍! 천재과학자 뉴턴도 실패한 광기의 투자사</td><td>경제/투자</td><td>주식·부동산·거품경제</td><td>투자 열풍과 버블 붕괴의 반복 패턴</td></tr><tr data-major="경제"><td>260</td><td>2026-06-22</td><td>미·이란 전쟁이 불러온 공포! 1·2차 오일쇼크의 역사</td><td>경제/자원</td><td>오일쇼크·석유·인플레이션</td><td>원자재 가격이 소비·물가·기업비용에 미치는 영향</td></tr><tr data-major="경제범죄"><td>254</td><td>2026-05-11</td><td>히틀러 유품·에펠탑 철거! 황당 사기 스캔들</td><td>경제범죄</td><td>사기·은행·투자사기</td><td>신뢰·권위·유명세를 악용한 사기 구조</td></tr><tr data-major="경제"><td>250</td><td>2026-04-13</td><td>미국의 대공황은 어떻게 범죄 커플을 만들었나</td><td>경제/사회</td><td>대공황·은행강도·불황</td><td>불황이 범죄·대중문화·소비심리에 미친 영향</td></tr><tr data-major="경제범죄"><td>246</td><td>2026-03-16</td><td>납치·사기·폭력이 판치는 캄보디아 범죄단지</td><td>경제범죄/운영</td><td>보이스피싱·투자리딩방·로맨스스캠</td><td>범죄조직도 운영시스템과 퍼널을 가진다는 경고</td></tr><tr data-major="경제"><td>236</td><td>2026-01-05</td><td>잉카, 나치, 5천억 도난까지! 황금약탈사</td><td>경제/자산</td><td>금·안전자산·약탈</td><td>화폐 불안 시 안전자산이 권력·폭력과 연결되는 방식</td></tr><tr data-major="경제정책"><td>223</td><td>2025-10-06</td><td>4선대통령 루스벨트는 영웅인가 독재자인가?</td><td>경제정책/리더십</td><td>루스벨트·대공황·권력집중</td><td>위기 대응 리더십과 정부개입의 양면</td></tr><tr data-major="마케팅"><td>222</td><td>2025-09-23</td><td>1,000조 산업! 패스트푸드는 어떻게 세계를 사로잡았나!</td><td>마케팅/산업</td><td>패스트푸드·1,000조 산업·현지화</td><td>표준화·속도·프랜차이즈·굿즈 마케팅</td></tr><tr data-major="문화산업"><td>221</td><td>2025-09-16</td><td>환락가에서 꿈의 무대로! 브로드웨이 생존기</td><td>문화산업</td><td>브로드웨이·공연산업·도시재생</td><td>범죄지구가 콘텐츠 상권으로 바뀐 과정</td></tr><tr data-major="마케팅"><td>217</td><td>2025-08-19</td><td>가짜뉴스의 시초, 옐로 저널리즘은 어떻게 대중을 현혹했나!</td><td>마케팅/미디어</td><td>옐로 저널리즘·조회수·가짜뉴스</td><td>주의경제와 자극적 콘텐츠의 수익 모델</td></tr><tr data-major="경제"><td>216</td><td>2025-08-12</td><td>성형수술은 인간의 얼굴과 몸을 어떻게 개조했나?</td><td>경제/시장</td><td>성형수술·77조 시장</td><td>욕망·기술·의료서비스가 시장을 만드는 방식</td></tr><tr data-major="경영"><td>215</td><td>2025-08-05</td><td>조조부터 트럼프까지! 리더들은 왜 손자병법에 열광하나?</td><td>경영/전략</td><td>손자병법·리더·전략</td><td>군사전략이 경영·외교·협상으로 확장되는 방식</td></tr><tr data-major="마케팅"><td>213</td><td>2025-07-22</td><td>설득인가? 속임수인가? 인류의 삶을 뒤흔든 광고</td><td>마케팅/광고</td><td>광고·설득·1,500조 투자비</td><td>광고가 산업과 소비행동을 바꾼 역사</td></tr><tr data-major="식품산업"><td>211</td><td>2025-07-08</td><td>밀가루는 어떻게 K-라면이 되었나?</td><td>식품산업/브랜드</td><td>밀가루·K-라면·글로벌 푸드</td><td>원재료가 대중식품과 수출상품이 되는 과정</td></tr><tr data-major="경제"><td>210</td><td>2025-07-01</td><td>죄수들의 지옥! 호주는 어떻게 부의 천국이 되었나?</td><td>경제/국가성장</td><td>호주·자산·자원·식민지</td><td>유배지가 부의 천국으로 바뀐 성장 경로</td></tr><tr data-major="경제"><td>207</td><td>2025-06-10</td><td>트럼프의 관세전쟁! 관세는 어떻게 세계사를 뒤바꿨나!</td><td>경제/무역</td><td>관세전쟁·세계무역·중국</td><td>관세가 공급망·가격·국제질서를 흔드는 방식</td></tr><tr data-major="관광경제"><td>203</td><td>2025-05-13</td><td>비극의 섬 하와이는 어떻게 세계 최고 휴양지가 되었나?</td><td>관광경제</td><td>하와이·관광지·식민지</td><td>관광 브랜드 뒤의 토지·권력·상업화</td></tr><tr data-major="경제"><td>197</td><td>2025-04-01</td><td>멕시코는 왜 금싸라기 땅, 텍사스와 캘리포니아를 미국에 빼앗겼나!</td><td>경제/자원</td><td>텍사스·캘리포니아·석유·IT</td><td>지역 자원과 산업이 국가경제를 키운 사례</td></tr><tr data-major="경영"><td>196</td><td>2025-03-25</td><td>푸틴의 전쟁대행 주식회사! 바그너 그룹</td><td>경영/조직</td><td>바그너 그룹·민간군사기업</td><td>전쟁도 외주화·회사화되는 조직 모델</td></tr><tr data-major="경영"><td>192</td><td>2025-02-25</td><td>트럼프의 적에서 킹 메이커가 된 세계 최고 부자, 일론 머스크!</td><td>경영/기업가</td><td>일론 머스크·부자·정치후원</td><td>기업가 브랜드, 자본, 정치 영향력</td></tr><tr data-major="부동산"><td>187</td><td>2025-01-21</td><td>로제 열풍! 세계 최초의 아파트는 어떻게 탄생했나!</td><td>부동산/도시</td><td>아파트·현대건축·주거상품</td><td>주거 형태가 상품·문화가 되는 과정</td></tr><tr data-major="마케팅"><td>186</td><td>2025-01-14</td><td>흑백요리사(史)! 프랑스는 어떻게 미슐랭을 탄생시켰나?</td><td>마케팅/브랜드</td><td>미슐랭 가이드·미식문화</td><td>타이어 회사의 콘텐츠 마케팅이 권위가 된 사례</td></tr><tr data-major="경제"><td>184</td><td>2024-12-31</td><td>뻘밭에서 2천조의 땅으로! 세계 경제의 상징 맨해튼</td><td>경제/도시</td><td>맨해튼·2천조·세계경제</td><td>입지·금융·부동산이 도시가치를 만드는 구조</td></tr><tr data-major="경제"><td>182</td><td>2024-12-17</td><td>도쿄수난사! 재난은 어떻게 도쿄를 세계도시로 만들었나!</td><td>경제/도시경영</td><td>도쿄·재난·세계도시</td><td>재난 복구가 도시 경쟁력으로 전환되는 방식</td></tr><tr data-major="관광"><td>180</td><td>2024-12-03</td><td>세계 최대 카지노 도시! 마카오의 탄생</td><td>관광/카지노경제</td><td>마카오·카지노·관광</td><td>규제산업과 관광산업의 결합</td></tr><tr data-major="경제"><td>174</td><td>2024-10-22</td><td>자유의 나라 네덜란드는 왜 학살을 저질렀나?</td><td>경제/무역</td><td>네덜란드·대항해·식민지</td><td>작은 나라가 무역·금융으로 패권을 만든 방식</td></tr><tr data-major="경제"><td>173</td><td>2024-10-15</td><td>바다를 닫아 유럽에게 무너진 세계 패권국가 중국</td><td>경제/무역전략</td><td>중국·해금정책·해상무역</td><td>바다를 닫은 전략이 시장을 잃게 한 사례</td></tr><tr data-major="경제"><td>172</td><td>2024-10-08</td><td>모피를 향한 탐욕이 만든 죽음의 땅, 시베리아</td><td>경제/자원</td><td>시베리아·모피·검은 황금</td><td>자원 수요가 영토 확장과 폭력을 부른 구조</td></tr><tr data-major="산업"><td>170</td><td>2024-09-24</td><td>신의 선물인가? 저주인가? 플라스틱의 역습</td><td>산업/제품수명</td><td>플라스틱·발명·환경비용</td><td>혁신 제품의 확산과 외부비용</td></tr><tr data-major="경영"><td>162</td><td>2024-07-30</td><td>죽음의 상인 노벨은 왜 노벨상을 만들었나!</td><td>경영/혁신</td><td>노벨·다이너마이트·노벨상</td><td>발명·평판 리스크·유산 설계</td></tr><tr data-major="경제"><td>161</td><td>2024-07-23</td><td>죽음의 섬 싱가포르는 어떻게 세계 부국이 되었나?</td><td>경제/국가경영</td><td>싱가포르·부국·도시국가</td><td>작은 시장이 고부가 경제로 성장한 사례</td></tr><tr data-major="경제"><td>160</td><td>2024-07-16</td><td>붕괴된 소련을 집어삼킨 거대 재벌, 올리가르히</td><td>경제/재벌</td><td>올리가르히·민영화·부의 집중</td><td>제도 전환기 자산 사유화와 권력 결합</td></tr><tr data-major="마케팅"><td>157</td><td>2024-06-25</td><td>괴벨스는 어떻게 히틀러를 신으로 만들었나?</td><td>마케팅/프로파간다</td><td>괴벨스·선동·브랜딩</td><td>메시지 반복과 이미지 설계의 위험한 힘</td></tr><tr data-major="경영"><td>155</td><td>2024-06-11</td><td>세계 부자 1위는 어떻게 명품 제국을 이루었나?</td><td>경영/브랜드</td><td>LVMH·명품제국·아르노</td><td>인수합병·포트폴리오·럭셔리 브랜드 전략</td></tr><tr data-major="마케팅"><td>154</td><td>2024-06-04</td><td>미국의 상징 콜라는 어떻게 세계를 중독 시켰나</td><td>마케팅/브랜드</td><td>콜라·코카콜라·세계화</td><td>전쟁·유통·브랜딩으로 세계 음료가 된 과정</td></tr><tr data-major="문화산업"><td>152</td><td>2024-05-21</td><td>할리우드에 저항한 최초의 여배우! 마릴린 먼로</td><td>문화산업/개인브랜드</td><td>마릴린 먼로·할리우드 시스템</td><td>스타 IP와 개인 브랜드의 권리 투쟁</td></tr><tr data-major="관광"><td>145</td><td>2024-04-02</td><td>금욕의 땅, 라스베이거스는 어떻게 환락의 도시가 되었나?</td><td>관광/도시마케팅</td><td>라스베이거스·카지노·환락도시</td><td>장소 브랜딩과 규제산업의 도시 성장</td></tr><tr data-major="문화산업"><td>143</td><td>2024-03-19</td><td>리틀 할리우드! 홍콩 영화는 어떻게 망했나?</td><td>문화산업</td><td>홍콩영화·리틀 할리우드</td><td>콘텐츠 산업이 성장·쇠퇴하는 조건</td></tr><tr data-major="상품사"><td>142</td><td>2024-03-12</td><td>달콤함이 불러온 재앙! 인간의 욕망이 깃든 초콜릿</td><td>상품사/소비</td><td>초콜릿·사치품·원료</td><td>기호품이 글로벌 소비재가 되는 과정</td></tr><tr data-major="경제정책"><td>138</td><td>2024-02-13</td><td>영국병을 타파한 ‘철의 여인’ 마거릿 대처의 두 얼굴!</td><td>경제정책/리더십</td><td>마거릿 대처·영국병·민영화</td><td>구조개혁 리더십과 사회적 비용</td></tr><tr data-major="브랜드"><td>121</td><td>2023-10-17</td><td>신의 물방울, 와인은 어떻게 프랑스의 자존심이 되었나?</td><td>브랜드/식문화</td><td>와인·프랑스·자존심</td><td>지역 산물이 국가 브랜드가 되는 방식</td></tr><tr data-major="문화산업"><td>113</td><td>2023-08-22</td><td>화려한 할리우드 성장에 감춰진 추악한 진실</td><td>문화산업</td><td>할리우드·영화도시·시스템</td><td>엔터테인먼트 산업 성장의 어두운 이면</td></tr><tr data-major="경영"><td>112</td><td>2023-08-15</td><td>비정한 워커홀릭 스티브 잡스는 어떻게 혁신의 아이콘이 되었나?!</td><td>경영/기업가</td><td>스티브 잡스·애플·혁신</td><td>제품철학·조직문화·리더십의 양면</td></tr><tr data-major="브랜드"><td>110</td><td>2023-08-01</td><td>파란만장한 삶 위에 세운 샤넬 제국</td><td>브랜드/패션경영</td><td>샤넬·패션제국</td><td>창업자 서사와 브랜드 자산 구축</td></tr><tr data-major="문화산업"><td>98</td><td>2023-05-09</td><td>미국은 왜 블랙 코미디의 거장, 찰리 채플린을 버렸나</td><td>문화산업/노동</td><td>찰리 채플린·연봉·할리우드</td><td>콘텐츠 스타의 수익과 정치 리스크</td></tr><tr data-major="경제"><td>93</td><td>2023-04-04</td><td>오일머니로 일군 세계 1위 부자 빈 살만의 쩐의 전쟁</td><td>경제/자원전략</td><td>빈 살만·오일머니·사우디</td><td>자원 의존국의 개혁·투자 전략</td></tr><tr data-major="경제"><td>84</td><td>2023-01-31</td><td>기회인가? 재앙인가? 21세기 우주 패권 전쟁</td><td>경제/신산업</td><td>우주패권·NASA·우주산업</td><td>국가 경쟁이 신산업 생태계로 이어지는 방식</td></tr><tr data-major="경영"><td>82</td><td>2023-01-17</td><td>위인전에서 알려주지 않는 발명왕 에디슨의 실체</td><td>경영/혁신</td><td>에디슨·발명·사업화</td><td>발명가에서 사업가로 확장한 혁신 모델</td></tr><tr data-major="경제"><td>81</td><td>2023-01-10</td><td>뻘밭에서 황금의 땅으로! 상하이 격동의 150년</td><td>경제/도시</td><td>상하이·경제도시·조계지</td><td>항구·외국자본·전쟁이 도시경제를 바꾼 사례</td></tr><tr data-major="경제"><td>70</td><td>2022-10-25</td><td>권모술수로 일군 금융 커넥션! 메디치 가문</td><td>경제/금융경영</td><td>메디치·금융재벌·후원</td><td>금융자본과 문화후원의 결합</td></tr><tr data-major="경제"><td>63</td><td>2022-09-06</td><td>잃어버린 20년! 일본을 붕괴시킨 버블 경제</td><td>경제/버블</td><td>일본 버블경제·잃어버린 20년</td><td>자산버블과 장기침체의 교훈</td></tr><tr data-major="경제"><td>62</td><td>2022-08-30</td><td>탐욕이 불러온 대살육, 블러드 다이아몬드</td><td>경제/자원윤리</td><td>블러드 다이아몬드·사치재</td><td>원자재 공급망과 윤리적 소비</td></tr><tr data-major="상품사"><td>60</td><td>2022-08-16</td><td>유럽을 잠 못 이루게 한 오스만 제국과 커피</td><td>상품사/브랜드</td><td>커피·오스만·세계화</td><td>기호품이 글로벌 습관과 시장이 된 과정</td></tr><tr data-major="경제"><td>58</td><td>2022-08-02</td><td>오일 쇼크의 악몽?! 석유 패권 전쟁</td><td>경제/자원</td><td>석유패권·유가·물가</td><td>에너지 패권이 세계경제를 움직이는 방식</td></tr><tr data-major="경제"><td>56</td><td>2022-07-19</td><td>달러는 어떻게 세계 경제를 장악했나!</td><td>경제/통화</td><td>달러·인플레이션·금리</td><td>기축통화와 세계경제 지배 구조</td></tr><tr data-major="불법경제"><td>49</td><td>2022-05-31</td><td>라틴 아메리카는 왜 마약 조직의 온상이 되었나?</td><td>불법경제</td><td>마약조직·유통·카르텔</td><td>불법 시장의 유통망과 조직화</td></tr><tr data-major="경제"><td>47</td><td>2022-05-17</td><td>세상을 바꾼 산업혁명과 슬럼가의 비극</td><td>경제/산업혁명</td><td>산업혁명·대량생산·공장</td><td>생산방식 변화와 도시 빈곤</td></tr><tr data-major="경제"><td>43</td><td>2022-04-19</td><td>미국의 서부 팽창과 인디언의 눈물</td><td>경제/부동산</td><td>미국 서부팽창·토지거래</td><td>토지 확보와 국가 성장의 관계</td></tr><tr data-major="경제"><td>41</td><td>2022-04-05</td><td>달콤함이 만든 잔혹한 거래, 영국 노예무역</td><td>경제/무역윤리</td><td>노예무역·설탕·상품화</td><td>소비재 이면의 공급망 폭력</td></tr><tr data-major="경제"><td>30</td><td>2022-01-11</td><td>영 제국이 일으킨 가장 부도덕한 전쟁! &lt;아편전쟁&gt;</td><td>경제/무역</td><td>아편전쟁·홍차·무역적자</td><td>무역 불균형이 전쟁으로 번진 사례</td></tr><tr data-major="경제"><td>24</td><td>2021-08-17</td><td>걸프전쟁 편</td><td>경제/자원전쟁</td><td>걸프전쟁·석유·패권</td><td>자원 확보가 국제전쟁으로 확장된 사례</td></tr><tr data-major="경제"><td>23</td><td>2021-08-10</td><td>경제 대공황 편</td><td>경제/금융위기</td><td>경제 대공황·주식시장·은행</td><td>자본주의 호황과 붕괴의 전형</td></tr></tbody></table></div>
+    </section>
+  </main>
+
+  <section class="cta" id="follow"><div class="cta-inner"><div><p class="eyebrow">팔로우와 응원 메시지</p><h2>이 자료가 도움이 되었다면<br>응원의 메시지를 보내주세요.</h2><p>세계사 속 비즈니스 구조를 소상공인과 1인사업자가 바로 이해할 수 있는 콘텐츠로 계속 정리하겠습니다. 인스타그램을 팔로우하거나 DM으로 응원의 메시지를 남겨주세요.</p></div><div class="cta-box"><div class="handle"><span class="ig-logo" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="white" stroke-width="2"/><circle cx="17" cy="7" r="1.4" fill="white"/></svg></span>@biz.pacemaker</div><p>경영컨설턴트 채병권 대표의 비즈니스 관점 콘텐츠를 받아보세요.</p><div class="profile-actions"><a class="btn red" href="https://www.instagram.com/biz.pacemaker/" target="_blank" rel="noopener">팔로우하기</a><a class="btn secondary" href="https://ig.me/m/biz.pacemaker" target="_blank" rel="noopener">DM으로 응원하기</a></div></div></div></section>
+
+  <footer class="footer"><div class="footer-inner"><span>경영컨설턴트 채병권 대표 · 인스타그램 @biz.pacemaker</span><span>경제·마케팅·경영 관점 회차 큐레이션</span></div></footer>
+  <button class="backtop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="맨 위로">↑</button><div class="toast" id="toast">완료되었습니다.</div>
+  <script>
+    const CSV_TEXT = "회차,방영일자,제목,분류,핵심 키워드,경제·마케팅·경영 관점\n262,2026-07-06 예정,\"지리의 힘! 연간 22조 원의 물길, 운하!\",경제/물류,운하·수에즈·파나마·세계 물류,물류 병목과 지정학이 시장을 바꾸는 구조\n261,2026-06-29,주식 부동산 열풍! 천재과학자 뉴턴도 실패한 광기의 투자사,경제/투자,주식·부동산·거품경제,투자 열풍과 버블 붕괴의 반복 패턴\n260,2026-06-22,미·이란 전쟁이 불러온 공포! 1·2차 오일쇼크의 역사,경제/자원,오일쇼크·석유·인플레이션,원자재 가격이 소비·물가·기업비용에 미치는 영향\n254,2026-05-11,히틀러 유품·에펠탑 철거! 황당 사기 스캔들,경제범죄,사기·은행·투자사기,신뢰·권위·유명세를 악용한 사기 구조\n250,2026-04-13,미국의 대공황은 어떻게 범죄 커플을 만들었나,경제/사회,대공황·은행강도·불황,불황이 범죄·대중문화·소비심리에 미친 영향\n246,2026-03-16,납치·사기·폭력이 판치는 캄보디아 범죄단지,경제범죄/운영,보이스피싱·투자리딩방·로맨스스캠,범죄조직도 운영시스템과 퍼널을 가진다는 경고\n236,2026-01-05,\"잉카, 나치, 5천억 도난까지! 황금약탈사\",경제/자산,금·안전자산·약탈,화폐 불안 시 안전자산이 권력·폭력과 연결되는 방식\n223,2025-10-06,4선대통령 루스벨트는 영웅인가 독재자인가?,경제정책/리더십,루스벨트·대공황·권력집중,위기 대응 리더십과 정부개입의 양면\n222,2025-09-23,\"1,000조 산업! 패스트푸드는 어떻게 세계를 사로잡았나!\",마케팅/산업,\"패스트푸드·1,000조 산업·현지화\",표준화·속도·프랜차이즈·굿즈 마케팅\n221,2025-09-16,환락가에서 꿈의 무대로! 브로드웨이 생존기,문화산업,브로드웨이·공연산업·도시재생,범죄지구가 콘텐츠 상권으로 바뀐 과정\n217,2025-08-19,\"가짜뉴스의 시초, 옐로 저널리즘은 어떻게 대중을 현혹했나!\",마케팅/미디어,옐로 저널리즘·조회수·가짜뉴스,주의경제와 자극적 콘텐츠의 수익 모델\n216,2025-08-12,성형수술은 인간의 얼굴과 몸을 어떻게 개조했나?,경제/시장,성형수술·77조 시장,욕망·기술·의료서비스가 시장을 만드는 방식\n215,2025-08-05,조조부터 트럼프까지! 리더들은 왜 손자병법에 열광하나?,경영/전략,손자병법·리더·전략,군사전략이 경영·외교·협상으로 확장되는 방식\n213,2025-07-22,설득인가? 속임수인가? 인류의 삶을 뒤흔든 광고,마케팅/광고,\"광고·설득·1,500조 투자비\",광고가 산업과 소비행동을 바꾼 역사\n211,2025-07-08,밀가루는 어떻게 K-라면이 되었나?,식품산업/브랜드,밀가루·K-라면·글로벌 푸드,원재료가 대중식품과 수출상품이 되는 과정\n210,2025-07-01,죄수들의 지옥! 호주는 어떻게 부의 천국이 되었나?,경제/국가성장,호주·자산·자원·식민지,유배지가 부의 천국으로 바뀐 성장 경로\n207,2025-06-10,트럼프의 관세전쟁! 관세는 어떻게 세계사를 뒤바꿨나!,경제/무역,관세전쟁·세계무역·중국,관세가 공급망·가격·국제질서를 흔드는 방식\n203,2025-05-13,비극의 섬 하와이는 어떻게 세계 최고 휴양지가 되었나?,관광경제,하와이·관광지·식민지,관광 브랜드 뒤의 토지·권력·상업화\n197,2025-04-01,\"멕시코는 왜 금싸라기 땅, 텍사스와 캘리포니아를 미국에 빼앗겼나!\",경제/자원,텍사스·캘리포니아·석유·IT,지역 자원과 산업이 국가경제를 키운 사례\n196,2025-03-25,푸틴의 전쟁대행 주식회사! 바그너 그룹,경영/조직,바그너 그룹·민간군사기업,전쟁도 외주화·회사화되는 조직 모델\n192,2025-02-25,\"트럼프의 적에서 킹 메이커가 된 세계 최고 부자, 일론 머스크!\",경영/기업가,일론 머스크·부자·정치후원,\"기업가 브랜드, 자본, 정치 영향력\"\n187,2025-01-21,로제 열풍! 세계 최초의 아파트는 어떻게 탄생했나!,부동산/도시,아파트·현대건축·주거상품,주거 형태가 상품·문화가 되는 과정\n186,2025-01-14,흑백요리사(史)! 프랑스는 어떻게 미슐랭을 탄생시켰나?,마케팅/브랜드,미슐랭 가이드·미식문화,타이어 회사의 콘텐츠 마케팅이 권위가 된 사례\n184,2024-12-31,뻘밭에서 2천조의 땅으로! 세계 경제의 상징 맨해튼,경제/도시,맨해튼·2천조·세계경제,입지·금융·부동산이 도시가치를 만드는 구조\n182,2024-12-17,도쿄수난사! 재난은 어떻게 도쿄를 세계도시로 만들었나!,경제/도시경영,도쿄·재난·세계도시,재난 복구가 도시 경쟁력으로 전환되는 방식\n180,2024-12-03,세계 최대 카지노 도시! 마카오의 탄생,관광/카지노경제,마카오·카지노·관광,규제산업과 관광산업의 결합\n174,2024-10-22,자유의 나라 네덜란드는 왜 학살을 저질렀나?,경제/무역,네덜란드·대항해·식민지,작은 나라가 무역·금융으로 패권을 만든 방식\n173,2024-10-15,바다를 닫아 유럽에게 무너진 세계 패권국가 중국,경제/무역전략,중국·해금정책·해상무역,바다를 닫은 전략이 시장을 잃게 한 사례\n172,2024-10-08,\"모피를 향한 탐욕이 만든 죽음의 땅, 시베리아\",경제/자원,시베리아·모피·검은 황금,자원 수요가 영토 확장과 폭력을 부른 구조\n170,2024-09-24,신의 선물인가? 저주인가? 플라스틱의 역습,산업/제품수명,플라스틱·발명·환경비용,혁신 제품의 확산과 외부비용\n162,2024-07-30,죽음의 상인 노벨은 왜 노벨상을 만들었나!,경영/혁신,노벨·다이너마이트·노벨상,발명·평판 리스크·유산 설계\n161,2024-07-23,죽음의 섬 싱가포르는 어떻게 세계 부국이 되었나?,경제/국가경영,싱가포르·부국·도시국가,작은 시장이 고부가 경제로 성장한 사례\n160,2024-07-16,\"붕괴된 소련을 집어삼킨 거대 재벌, 올리가르히\",경제/재벌,올리가르히·민영화·부의 집중,제도 전환기 자산 사유화와 권력 결합\n157,2024-06-25,괴벨스는 어떻게 히틀러를 신으로 만들었나?,마케팅/프로파간다,괴벨스·선동·브랜딩,메시지 반복과 이미지 설계의 위험한 힘\n155,2024-06-11,세계 부자 1위는 어떻게 명품 제국을 이루었나?,경영/브랜드,LVMH·명품제국·아르노,인수합병·포트폴리오·럭셔리 브랜드 전략\n154,2024-06-04,미국의 상징 콜라는 어떻게 세계를 중독 시켰나,마케팅/브랜드,콜라·코카콜라·세계화,전쟁·유통·브랜딩으로 세계 음료가 된 과정\n152,2024-05-21,할리우드에 저항한 최초의 여배우! 마릴린 먼로,문화산업/개인브랜드,마릴린 먼로·할리우드 시스템,스타 IP와 개인 브랜드의 권리 투쟁\n145,2024-04-02,\"금욕의 땅, 라스베이거스는 어떻게 환락의 도시가 되었나?\",관광/도시마케팅,라스베이거스·카지노·환락도시,장소 브랜딩과 규제산업의 도시 성장\n143,2024-03-19,리틀 할리우드! 홍콩 영화는 어떻게 망했나?,문화산업,홍콩영화·리틀 할리우드,콘텐츠 산업이 성장·쇠퇴하는 조건\n142,2024-03-12,달콤함이 불러온 재앙! 인간의 욕망이 깃든 초콜릿,상품사/소비,초콜릿·사치품·원료,기호품이 글로벌 소비재가 되는 과정\n138,2024-02-13,영국병을 타파한 ‘철의 여인’ 마거릿 대처의 두 얼굴!,경제정책/리더십,마거릿 대처·영국병·민영화,구조개혁 리더십과 사회적 비용\n121,2023-10-17,\"신의 물방울, 와인은 어떻게 프랑스의 자존심이 되었나?\",브랜드/식문화,와인·프랑스·자존심,지역 산물이 국가 브랜드가 되는 방식\n113,2023-08-22,화려한 할리우드 성장에 감춰진 추악한 진실,문화산업,할리우드·영화도시·시스템,엔터테인먼트 산업 성장의 어두운 이면\n112,2023-08-15,비정한 워커홀릭 스티브 잡스는 어떻게 혁신의 아이콘이 되었나?!,경영/기업가,스티브 잡스·애플·혁신,제품철학·조직문화·리더십의 양면\n110,2023-08-01,파란만장한 삶 위에 세운 샤넬 제국,브랜드/패션경영,샤넬·패션제국,창업자 서사와 브랜드 자산 구축\n98,2023-05-09,\"미국은 왜 블랙 코미디의 거장, 찰리 채플린을 버렸나\",문화산업/노동,찰리 채플린·연봉·할리우드,콘텐츠 스타의 수익과 정치 리스크\n93,2023-04-04,오일머니로 일군 세계 1위 부자 빈 살만의 쩐의 전쟁,경제/자원전략,빈 살만·오일머니·사우디,자원 의존국의 개혁·투자 전략\n84,2023-01-31,기회인가? 재앙인가? 21세기 우주 패권 전쟁,경제/신산업,우주패권·NASA·우주산업,국가 경쟁이 신산업 생태계로 이어지는 방식\n82,2023-01-17,위인전에서 알려주지 않는 발명왕 에디슨의 실체,경영/혁신,에디슨·발명·사업화,발명가에서 사업가로 확장한 혁신 모델\n81,2023-01-10,뻘밭에서 황금의 땅으로! 상하이 격동의 150년,경제/도시,상하이·경제도시·조계지,항구·외국자본·전쟁이 도시경제를 바꾼 사례\n70,2022-10-25,권모술수로 일군 금융 커넥션! 메디치 가문,경제/금융경영,메디치·금융재벌·후원,금융자본과 문화후원의 결합\n63,2022-09-06,잃어버린 20년! 일본을 붕괴시킨 버블 경제,경제/버블,일본 버블경제·잃어버린 20년,자산버블과 장기침체의 교훈\n62,2022-08-30,\"탐욕이 불러온 대살육, 블러드 다이아몬드\",경제/자원윤리,블러드 다이아몬드·사치재,원자재 공급망과 윤리적 소비\n60,2022-08-16,유럽을 잠 못 이루게 한 오스만 제국과 커피,상품사/브랜드,커피·오스만·세계화,기호품이 글로벌 습관과 시장이 된 과정\n58,2022-08-02,오일 쇼크의 악몽?! 석유 패권 전쟁,경제/자원,석유패권·유가·물가,에너지 패권이 세계경제를 움직이는 방식\n56,2022-07-19,달러는 어떻게 세계 경제를 장악했나!,경제/통화,달러·인플레이션·금리,기축통화와 세계경제 지배 구조\n49,2022-05-31,라틴 아메리카는 왜 마약 조직의 온상이 되었나?,불법경제,마약조직·유통·카르텔,불법 시장의 유통망과 조직화\n47,2022-05-17,세상을 바꾼 산업혁명과 슬럼가의 비극,경제/산업혁명,산업혁명·대량생산·공장,생산방식 변화와 도시 빈곤\n43,2022-04-19,미국의 서부 팽창과 인디언의 눈물,경제/부동산,미국 서부팽창·토지거래,토지 확보와 국가 성장의 관계\n41,2022-04-05,\"달콤함이 만든 잔혹한 거래, 영국 노예무역\",경제/무역윤리,노예무역·설탕·상품화,소비재 이면의 공급망 폭력\n30,2022-01-11,영 제국이 일으킨 가장 부도덕한 전쟁! <아편전쟁>,경제/무역,아편전쟁·홍차·무역적자,무역 불균형이 전쟁으로 번진 사례\n24,2021-08-17,걸프전쟁 편,경제/자원전쟁,걸프전쟁·석유·패권,자원 확보가 국제전쟁으로 확장된 사례\n23,2021-08-10,경제 대공황 편,경제/금융위기,경제 대공황·주식시장·은행,자본주의 호황과 붕괴의 전형\n";
+    const CSV_FOR_EXCEL = '\ufeff' + CSV_TEXT;
+    const chips = [...document.querySelectorAll('.chip')];
+    const cards = [...document.querySelectorAll('.episode-card')];
+    const searchInput = document.getElementById('searchInput');
+    const toast = document.getElementById('toast');
+    let currentFilter = 'all';
+    function showToast(msg) { toast.textContent = msg; toast.classList.add('show'); setTimeout(()=>toast.classList.remove('show'), 1800); }
+    function applyFilters() {
+      const q = (searchInput.value || '').trim().toLowerCase();
+      cards.forEach(card => {
+        const filterOk = currentFilter === 'all' || card.dataset.major === currentFilter;
+        const hay = [card.dataset.title, card.dataset.keywords, card.dataset.category, card.textContent].join(' ').toLowerCase();
+        const searchOk = !q || hay.includes(q);
+        card.style.display = filterOk && searchOk ? 'flex' : 'none';
+      });
+    }
+    chips.forEach(chip => chip.addEventListener('click', () => { chips.forEach(c=>c.classList.remove('active')); chip.classList.add('active'); currentFilter = chip.dataset.filter; applyFilters(); }));
+    searchInput.addEventListener('input', applyFilters);
+    document.getElementById('clearSearch').addEventListener('click', () => { searchInput.value=''; currentFilter='all'; chips.forEach(c=>c.classList.toggle('active', c.dataset.filter==='all')); applyFilters(); });
+    function download(filename, text, mime='text/plain;charset=utf-8') { const blob = new Blob([text], {type:mime}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=filename; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href), 500); }
+    async function copyText(text, msg) { try { await navigator.clipboard.writeText(text); showToast(msg); } catch(e) { const ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); showToast(msg); } }
+    document.getElementById('downloadCsv').addEventListener('click', () => download('벌거벗은세계사_비즈니스_회차정리_excel.csv', CSV_FOR_EXCEL, 'text/csv;charset=utf-8'));
+    document.getElementById('copyCsv').addEventListener('click', () => copyText(CSV_TEXT, 'CSV가 복사되었습니다.'));
+    document.getElementById('copyTable').addEventListener('click', () => {
+      const rows = [...document.querySelectorAll('#episodeTable tr')].map(tr => [...tr.children].map(td => td.innerText.replace(/\s+/g,' ').trim()).join('\t')).join('\n');
+      copyText(rows, '표가 복사되었습니다.');
+    });
+    document.getElementById('copyLink').addEventListener('click', () => copyText(location.href, '현재 링크가 복사되었습니다.'));
+  </script>
+</body>
+</html>
